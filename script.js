@@ -6,3 +6,13 @@ function toggleMenu() {
     
 
 }
+document.querySelectorAll(".trailer").forEach(video => {
+    video.addEventListener("mouseenter", function () {
+        this.play();
+    });
+
+    video.addEventListener("mouseleave", function () {
+        this.pause();
+        this.currentTime = 0; // Reset video to start when unhovered
+    });
+});

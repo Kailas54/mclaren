@@ -47,66 +47,37 @@
             <div class="shadow"></div>
             <div>
                 <span style="--i: 0">
-                 <video class="trailer mclaren-1 screen-video active"
-                 src="./mclaren-1.mp4"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
-                 <video class="trailer mclaren-2 screen-video "
-                 src="./mclaren1-2.mp4"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
-                 <video class="trailer mclaren-3 screen-video "
-                 src="./mclaren-3.mp4"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
-                 <video class="trailer mclaren-4 screen-video "
-                 src="./mclaren-4.mp4"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
-                 <video class="trailer mclaren-5 screen-video "
-                 src="./mclaren-5.mp4"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
+                    <video class="trailer screen-video active"
+                        src="./mclaren-1.mp4"
+                        autoplay muted loop playsinline preload="auto">
+                    </video>
                 </span>
+                
                 <span style="--i: 1">
-                <video class="screen-video"
-                 src="./trailer-1.mp4"
-                 controls loading="lazy"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
+                    <video class="screen-video"
+                        src="./trailer-1.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
                 </span>
+                
                 <span style="--i: 2">
-                <video class="screen-video"
-                 src="./trailer-2.mp4"
-                 controls loading="lazy"
-                 autoplay
-                 muted
-                 loop
-                 ></video>
+                    <video class="screen-video"
+                        src="./trailer-2.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
                 </span>
+                
                 <span style="--i: 3">
-                <video class="screen-video"
-                 src="./trailer-3.mp4"
-                 autoplay
-                 controls loading="lazy"
-                 muted
-                 loop
-                 ></video>
+                    <video class="screen-video"
+                        src="./trailer-3.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
                 </span>
             </div>
-          </div>
+        </div>        
           <div class="gallery">
             
             <div class="carousel">
