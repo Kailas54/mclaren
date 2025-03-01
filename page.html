@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width ,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./main.css" />
+        <title>McLAREN|Sports Car Page</title>
+    </head>
+    <body class="home">
+        <header>
+            <span class="year">2025</span>
+            <a href="/" class="logo"><img src="/Mclaren-Logo-Transparent-PNG.png" alt="logo"></a>
+            <a href="#" class="menu " onclick="toggleMenu();"></a>
+        </header>
+        <div class="banner">
+          <ul class="nav">
+              <li><a href="#" onclick="changeVideo('maclaren-1');">GT</a></li>
+              <li><a href="#" onclick="changeVideo('maclaren-2');">Ultimate</a></li>
+              <li><a href="#" onclick="changeVideo('maclaren-3');">Solus GT</a></li>
+              <li><a href="#" onclick="changeVideo('maclaren-4');">Legacy</a></li>
+              <li><a href="#" onclick="changeVideo('maclaren-5');">Supercars</a></li>
+          </ul>
+          <div class="bgvideo">
+                <video class="bg-video maclaren-1 active"
+                src="./mclaren-1.mp4" autoplay muted loop></video>
+                <video class="bg-video maclaren-2 "
+                src="./mclaren1-2.mp4" autoplay muted loop></video>
+                <video class="bg-video maclaren-3 "
+                src="./mclaren-3.mp4" autoplay muted loop></video>
+                <video class="bg-video maclaren-4 "
+                src="./mclaren-4.mp4" autoplay muted loop></video>
+                <video class="bg-video maclaren-5 "
+                src="./mclaren-5.mp4" autoplay muted loop></video>
+          </div>
+          <div class="content">
+            <h1>McLAREN</h1>
+            <h3 class="model maclaren-1 active">ARTURA</h3>
+            <h3 class="model maclaren-2 " style="color: #0096FF ;">765LT SPIDER</h3>
+            <h3 class="model maclaren-3 " style="color: #EE4B2B ;">750S</h3>
+            <h3 class="model maclaren-4 " style="color: #ffffff ;">765LT</h3>
+            <h3 class="model maclaren-5 " style="color: #ffffff ;">750S SPIDER</h3>
+            <p>McLaren Automotive is a British automotive manufacturer based at the McLaren Technology Centre in Woking, Surrey. The main products of the company are supercars, which are produced in-house in designated production facilities. In July 2017, McLaren Automotive became a 100% owned subsidiary of the wider McLaren Group.</p>
+            <a href="./enquire.html">Enquire Now</a>
+          </div>
+          <div class="screen">
+            <div class="shadow"></div>
+            <div>
+                <span style="--i: 0">
+                    <video class="trailer screen-video active"
+                        src="./mclaren-1.mp4"
+                        autoplay muted loop playsinline preload="auto">
+                    </video>
+                </span>
+                
+                <span style="--i: 1">
+                    <video class="screen-video"
+                        src="./trailer-1.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
+                </span>
+                
+                <span style="--i: 2">
+                    <video class="screen-video"
+                        src="./trailer-2.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
+                </span>
+                
+                <span style="--i: 3">
+                    <video class="screen-video"
+                        src="./trailer-3.mp4"
+                        controls muted loop playsinline preload="none" loading="lazy"
+                        onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                    </video>
+                </span>
+            </div>
+        </div>        
+          <div class="gallery">
+            
+            <div class="carousel">
+             <a class="carousel-item" href="#" onclick="changeVideo('maclaren-1');">
+              <img src="./mclaren-2 (1).jpg" alt=""/>
+              <h4 style="color: #3ef734 ;">ARTURA</h4>
+             </a>
+             <a class="carousel-item" href="#" onclick="changeVideo('maclaren-2');">
+              <img src="./mclaren-1 (1).jpg" alt=""/>
+              <h4 style="color: #34eaf7 ;">765LT SPIDER</h4>
+             </a>
+             <a class="carousel-item" href="#" onclick="changeVideo('maclaren-3');">
+              <img src="./mclaren-3 (1).jpeg" alt=""/>
+              <h4 style="color: #d81953 ;">750S</h4>
+             </a>
+             <a class="carousel-item" href="#" onclick="changeVideo('maclaren-4');">
+              <img src="./mclaren-4 (1).jpeg" alt=""/>
+              <h4 style="color: #d65e18 ;">765LT</h4>
+             </a>
+             <a class="carousel-item" href="#" onclick="changeVideo('maclaren-5');">
+              <img src="./mclaren-5 (1).jpeg" alt=""/>
+              <h4 style="color: #f7f9f9c7 ;">750S SPIDER</h4>
+             </a>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./script.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function(){
+           $('.carousel').carousel();
+         });
+        </script>
+    <footer class="footer">
+        <h5>Created and managed by Kailas Nadh A J</h5>
+    </footer>
+    </body>
+</html>
